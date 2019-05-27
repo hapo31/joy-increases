@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/images/joy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <script async src="./index.js"></script>
+
+    <style>
+      .container {
+        width: 100%;
+        height: 720px;
+      }
+      .away-container {
+        width: 100px;
+        height: 100px;
+        transition: all 300ms 0s ease-in-out;
+      }
+      .away-container.is-cold {
+        background-color: blue;
+      }
+
+      .away-container.is-cold > img {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
